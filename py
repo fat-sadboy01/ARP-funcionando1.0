@@ -1,9 +1,10 @@
+# interface gráfica do usuário (GUI) tk OS sistema operacional
 import tkinter as tk
 import os
 
 # função para obter a tabela ARP usando o comando "arp -a"
 def get_arp_table():
-    arp_table = os.popen("arp -a").read()
+    arp_table = os.popen("arp -a").read() # arp-a mesmo comando utilizado no cmd windows
     return arp_table
 
 # cria a janela principal
